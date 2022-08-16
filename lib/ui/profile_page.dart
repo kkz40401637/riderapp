@@ -1,36 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'fooder.dart';
-class Profile extends StatefulWidget {
-  const Profile({Key? key}) : super(key: key);
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
-  State<Profile> createState() => _ProfileState();
+  State<ProfilePage> createState() => _ProfilePageState();
 }
 
-class _ProfileState extends State<Profile> {
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: const Color(0xffF55F01),
-        centerTitle: true,
-        title: const Text(
-          'Account',
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.headset_mic),
-          ),
-        ],
-      ),
       body: SizedBox(
         width: width,
         child: Column(
@@ -127,11 +110,8 @@ class _ProfileState extends State<Profile> {
           ],
         ),
       ),
-
     );
-
   }
-
 }
 
 class EachSettingListTile extends StatelessWidget {
@@ -198,6 +178,5 @@ class TitleTextAccountPage extends StatelessWidget {
         ),
       ),
     );
-
   }
 }
