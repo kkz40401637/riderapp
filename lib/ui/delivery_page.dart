@@ -1,3 +1,6 @@
+import 'package:apitestinglogin/ui/finished_page.dart';
+import 'package:apitestinglogin/ui/in_progress_page.dart';
+import 'package:apitestinglogin/ui/upcoming_page.dart';
 import 'package:apitestinglogin/ui/widgets/list_view_behavior.dart';
 import 'package:flutter/material.dart';
 
@@ -41,9 +44,9 @@ class _DeliveryPageState extends State<DeliveryPage> {
             const Expanded(
               child: TabBarView(
                 children: [
-                  Text('UpComing'),
-                  Text("In Progress"),
-                  Text('Finished'),
+                  UpComingPage(),
+                  InProgressPage(),
+                  FinishedPage(),
                 ],
               ),
             ),
